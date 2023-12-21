@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "countrypicker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mobven/CountryPicker.git",
+      "state" : {
+        "revision" : "fc84df8310daede33984f673b2b601b452433eec",
+        "version" : "1.0.9"
+      }
+    }
+  ],
+  "version" : 2
+}
