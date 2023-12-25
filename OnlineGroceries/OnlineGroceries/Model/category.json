@@ -1,0 +1,27 @@
+[
+{
+    "id": "1",
+    "name":"Fruits and Vegetables",
+    "image": "fruitveg",
+    "color": "00FF00"
+},
+{
+    "id": "2",
+    "name": "Dairy and Eggs",
+    "image": "dairy",
+    "color": "FFFFFF"
+},
+{
+    "id": "3",
+    "name": "Meat and Seafood",
+    "image": "meat",
+    "color": "FFC0CB"
+},
+{
+    "id": "4",
+    "name": "Grains and Cereals",
+    "image": "pulses",
+    "color": "FDFD96"
+}
+]
+

@@ -32,7 +32,7 @@ struct UserModel: Identifiable, Equatable {
         return true;
     }
     
-
-
-   
+    
+    
+    
 }

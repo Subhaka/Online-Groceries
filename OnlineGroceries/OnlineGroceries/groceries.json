@@ -1,0 +1,87 @@
+[
+    {
+        "offer_price": 12.99,
+        "id": 1,
+        "start_date": "2023-12-25",
+        "end_date": "2023-12-31",
+        "brand_id": 101,
+        "name": "Banana",
+        "details": "Contains more antioxidents and digests easily",
+        "unit_name": "pcs",
+        "unit_value": 7,
+        "nutrition_weight": "100g",
+        "price": 15.99,
+        "image": "banana",
+        "color" : "yellow",
+        "cat_name": "Fruits and Vegitables"
+    },
+    {
+        "offer_price": 9.49,
+        "id": 2,
+        "start_date": "2024-01-31",
+        "end_date": "2024-02-05",
+        "brand_id": 102,
+        "name": "Cabage",
+        "details": "Rich in Vitamin K and helps to cure blood clotting",
+        "unit_name": "pcs",
+        "unit_value": 1,
+        "nutrition_weight": "150g",
+        "price": 11.99,
+        "image": "cabage",
+        "color" : "green",
+        "cat_name": "Fruits and Vegitables"
+    },
+    
+    {
+        "offer_price": 5.62,
+        "id": 3,
+        "start_date": "2023-10-24",
+        "end_date": "2023-11-01",
+        "brand_id": 103,
+        "name": "Apple",
+        "details": "Rich in Vitamin K and helps to cure blood clotting",
+        "unit_name": "pcs",
+        "unit_value": 2,
+        "nutrition_weight": "150g",
+        "price": 6.99,
+        "image": "apple",
+        "color" : "red",
+        "cat_name": "Fruits and Vegitables"
+    },
+    
+    {
+        "offer_price": 10.66,
+        "id": 4,
+        "start_date": "2023-11-14",
+        "end_date": "2023-11-24",
+        "brand_id": 104,
+        "name": "Carrot",
+        "details": "Rich in Vitamins, Minerals and Antioxidants",
+        "unit_name": "pcs",
+        "unit_value": 5,
+        "nutrition_weight": "120g",
+        "price": 12.43,
+        "image": "carrot",
+        "color" : "orange",
+        "cat_name": "Fruits and Vegitables"
+    },
+    
+    {
+        "offer_price": 15.33,
+        "id": 5,
+        "start_date": "2023-10-03",
+        "end_date": "2023-10-07",
+        "brand_id": 105,
+        "name": "Blueberries",
+        "details": "",
+        "unit_name": "pcs",
+        "unit_value": 10,
+        "nutrition_weight": "90g",
+        "price": 17.40,
+        "image": "berries",
+        "color" : "purple",
+        "cat_name": "Fruits and Vegitables"
+    }
+]
+
+

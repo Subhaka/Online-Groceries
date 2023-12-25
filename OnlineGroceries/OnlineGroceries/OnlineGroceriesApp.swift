@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct OnlineGroceriesApp: App {
+    let groceriesModelData = GroceriesModelData()
+
     var body: some Scene {
         WindowGroup {
-            WelcomeView()// alter when using firebase
+            WelcomeView().environmentObject(groceriesModelData)
         }
     }
 }
