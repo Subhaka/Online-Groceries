@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC02F7102B3B6A3700E10B9C /* ProductDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC02F70F2B3B6A3700E10B9C /* ProductDetailsView.swift */; };
 		BC0C940A2B333EF7002F1DFD /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0C94092B333EF7002F1DFD /* CartView.swift */; };
 		BC0C940D2B333F41002F1DFD /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0C940C2B333F41002F1DFD /* FavouriteView.swift */; };
 		BC0FE4F12B308C1900D3CEF9 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0FE4F02B308C1800D3CEF9 /* UserModel.swift */; };
@@ -43,6 +44,7 @@
 		BC4A1C1B2B2FFB3C001CA9C3 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4A1C1A2B2FFB3C001CA9C3 /* SignUpView.swift */; };
 		BCBD804C2B389ABF001969C9 /* category.json in Resources */ = {isa = PBXBuildFile; fileRef = BCBD804B2B389ABF001969C9 /* category.json */; };
 		BCBD804E2B38C1E9001969C9 /* CategoryStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBD804D2B38C1E9001969C9 /* CategoryStructure.swift */; };
+		BCE39F702B3CB22500C41582 /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE39F6F2B3CB22500C41582 /* ProductDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC02F70F2B3B6A3700E10B9C /* ProductDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsView.swift; sourceTree = "<group>"; };
 		BC0C94092B333EF7002F1DFD /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		BC0C940C2B333F41002F1DFD /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
 		BC0FE4F02B308C1800D3CEF9 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
@@ -101,6 +104,7 @@
 		BC4A1C1A2B2FFB3C001CA9C3 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		BCBD804B2B389ABF001969C9 /* category.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = category.json; sourceTree = "<group>"; };
 		BCBD804D2B38C1E9001969C9 /* CategoryStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStructure.swift; sourceTree = "<group>"; };
+		BCE39F6F2B3CB22500C41582 /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				BC0FE4F92B31B92900D3CEF9 /* HomeView.swift */,
+				BC02F70F2B3B6A3700E10B9C /* ProductDetailsView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 			children = (
 				BC4A1C142B2A1676001CA9C3 /* MainViewModel.swift */,
 				BC0FE4F62B31798100D3CEF9 /* HomeViewModel.swift */,
+				BCE39F6F2B3CB22500C41582 /* ProductDetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -447,6 +453,7 @@
 				BC0FE4FD2B31BE8F00D3CEF9 /* ExploreView.swift in Sources */,
 				BC2E6C982B35561800A3AA27 /* GroceryStructure.swift in Sources */,
 				BC2E6C932B349B9800A3AA27 /* CategoryCall.swift in Sources */,
+				BCE39F702B3CB22500C41582 /* ProductDetailsViewModel.swift in Sources */,
 				BC4A1C1B2B2FFB3C001CA9C3 /* SignUpView.swift in Sources */,
 				BC4A1BD32B281BDB001CA9C3 /* OnlineGroceriesApp.swift in Sources */,
 				BC0FE4F52B314BA100D3CEF9 /* MainTabView.swift in Sources */,
@@ -458,6 +465,7 @@
 				BC2E6C8D2B33F32000A3AA27 /* SearchTextField.swift in Sources */,
 				BC4A1C072B28358F001CA9C3 /* UIExtensions.swift in Sources */,
 				BC4A1C152B2A1676001CA9C3 /* MainViewModel.swift in Sources */,
+				BC02F7102B3B6A3700E10B9C /* ProductDetailsView.swift in Sources */,
 				BC0FE4F12B308C1900D3CEF9 /* UserModel.swift in Sources */,
 				BC4A1C172B2A1CD1001CA9C3 /* LineTextField.swift in Sources */,
 			);

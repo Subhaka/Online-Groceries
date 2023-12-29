@@ -34,13 +34,14 @@ struct ProductCall: View {
                 .background(Color.primaryApp).cornerRadius(15)
 
             }
-            Text("Valid till \(item.endDate)").font(.system(size: 12,weight: .medium))
+//            Text("Valid till \(item.endDate)").font(.system(size: 12,weight: .medium))
 
 
-        }.padding(15)
+        }.padding(5)
         .frame(width: 180, height: 230).overlay{
             RoundedRectangle(cornerRadius: 16).stroke(Color.placeholder.opacity(0.5), lineWidth: 1)
-        }.background(Color(hex: "\(item.color)").opacity(0.2))
+        }
+//        .background(Color(hex: "\(item.color)").opacity(0.2))
     }
 }
 
