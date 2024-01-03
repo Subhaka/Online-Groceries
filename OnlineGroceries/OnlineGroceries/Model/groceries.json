@@ -6,15 +6,24 @@
         "end_date": "2023-12-31",
         "brand_id": 101,
         "name": "Banana",
-        "details": "Contains more antioxidents and digests easily",
+        "details": "Bananas are sweet, yellow fruits packed with potassium, vitamins (like C and B6), and fiber. They're versatile, great for snacking, and can be used in smoothies or baking.",
         "unit_name": "pcs",
         "unit_value": 7,
         "nutrition_weight": "100g",
         "price": 15.99,
         "image": "banana",
         "color" : "FFFF00",
-        "cat_name": "Fruits and Vegitables",
-        "division_name": "ExclusiveOffer"
+        "cat_name": "Fruits and Vegetables",
+        "division_name": "ExclusiveOffer",
+        "nutrition": {
+            "carbohydrates": 25,
+            "fats": 8,
+            "lipids": 3,
+            "protein": 1.5,
+            "vitamin_A": 50,
+            "vitamin_C": 20,
+            "vitamin_D": 10
+                    }
     },
     
     {
@@ -24,7 +33,7 @@
         "end_date": "2024-01-30",
         "brand_id": 102,
         "name": "Milk",
-        "details": "Contains High Nutrients & Vitamins",
+        "details": " Milk is a white nutrient-rich beverage, offering essential vitamins like A, D, and B12, along with calcium and protein. A versatile ingredient in cooking and a staple for many diets.",
         "unit_name": "bottle",
         "unit_value": 2,
         "nutrition_weight": "300g",
@@ -32,7 +41,16 @@
         "image": "milk",
         "color" : "FFFFFF",
         "cat_name": "Diary and Eggs",
-        "division_name": "ExclusiveOffer"
+        "division_name": "ExclusiveOffer",
+        "nutrition": {
+                    "carbohydrates": 12,
+                    "fats": 3.5,
+                    "lipids": 2.2,
+                    "protein": 8,
+                    "vitamin_A": 20,
+                    "vitamin_C": 2,
+                    "vitamin_D": 4
+                }
     },
     
     {
@@ -42,7 +60,7 @@
         "end_date": "2023-12-24",
         "brand_id": 103,
         "name": "Chicken",
-        "details": "Rich in Protien & Vitamins",
+        "details": "Chicken is a popular poultry meat known for its versatility in cooking. It's a lean source of protein, offering essential nutrients like vitamins B6 and B12. Available in various cuts and used in diverse culinary traditions worldwide.",
         "unit_name": "kg",
         "unit_value": 1,
         "nutrition_weight": "140g",
@@ -50,7 +68,17 @@
         "image": "chicken",
         "color" : "E2DADB",
         "cat_name": "Meat and Sea Foods",
-        "division_name": "ExclusiveOffer"
+        "division_name": "ExclusiveOffer",
+        "nutrition": {
+                "carbohydrates": 0,
+                "fats": 12,
+                "lipids": 3.5,
+                "protein": 20,
+                "vitamin_A": 8,
+                "vitamin_C": 0,
+                "vitamin_D": 1
+            }
+        
     },
     {
         "offer_price": 3.44,
@@ -59,7 +87,7 @@
         "end_date": "2023-12-23",
         "brand_id": 104,
         "name": "Rice",
-        "details": "Contains more antioxidents and digests easily",
+        "details": "Rice is a staple grain known for its versatility and widespread consumption globally. It's a source of carbohydrates and provides energy, with various types like white, brown, or wild rice. Commonly used in diverse cuisines and dishes worldwide.",
         "unit_name": "kg",
         "unit_value": 1,
         "nutrition_weight": "80g",
@@ -67,7 +95,16 @@
         "image": "rice",
         "color" : "FFFFFF",
         "cat_name": "Grains and Cereals",
-        "division_name": "ExclusiveOffer"
+        "division_name": "ExclusiveOffer",
+        "nutrition": {
+                "carbohydrates": 25,
+                "fats": 0.3,
+                "lipids": 0.2,
+                "protein": 0.5,
+                "vitamin_A": 2,
+                "vitamin_C": 0,
+                "vitamin_D": 0
+            }
     },
     
     {
@@ -77,15 +114,24 @@
         "end_date": "2024-02-05",
         "brand_id": 105,
         "name": "Cabage",
-        "details": "Rich in Vitamin K and helps to cure blood clotting",
+        "details": "Cabbage is a leafy vegetable with a dense, round shape, often light green or purple in color. It's rich in vitamins K and C, with a crisp texture used in salads, stir-fries, or as a side dish.",
         "unit_name": "pcs",
         "unit_value": 1,
         "nutrition_weight": "150g",
         "price": 11.99,
         "image": "cabage",
         "color" : "00FF00",
-        "cat_name": "Fruits and Vegitables",
-        "division_name": "ExclusiveOffer"
+        "cat_name": "Fruits and Vegetables",
+        "division_name": "ExclusiveOffer",
+        "nutrition": {
+                "carbohydrates": 5,
+                "fats": 0.2,
+                "lipids": 0.1,
+                "protein": 0.8,
+                "vitamin_A": 35,
+                "vitamin_C": 60,
+                "vitamin_D": 1
+            }
     },
     
     {
@@ -95,7 +141,7 @@
         "end_date": "2023-11-17",
         "brand_id": 106,
         "name": "Eggs",
-        "details": "Rich in Protein",
+        "details": "Eggs are versatile and nutrient-dense food, packed with high-quality protein, vitamins like B12 and D, and essential minerals. Used in various dishes, from breakfast to baking, providing richness and binding properties.",
         "unit_name": "pcs",
         "unit_value": 7,
         "nutrition_weight": "50g",
@@ -103,7 +149,17 @@
         "image": "eggs",
         "color" : "FFFFFF",
         "cat_name": "Diary and Eggs",
-        "division_name": "ExclusiveOffer"
+        "division_name": "ExclusiveOffer",
+        "nutrition": {
+                "carbohydrates": 0.7,
+                "fats": 5,
+                "lipids": 1.6,
+                "protein": 6.5,
+                "vitamin_A": 5,
+                "vitamin_C": 0,
+                "vitamin_D": 2
+            }
+        
     },
     
     {
@@ -113,7 +169,7 @@
         "end_date": "2023-12-15",
         "brand_id": 107,
         "name": "Shrimp",
-        "details": "Rich in Protien & Nutrients",
+        "details": "Shrimp is a seafood delicacy known for its tender, sweet meat. It's a low-calorie, high-protein food, rich in omega-3 fatty acids, and a good source of vitamins and minerals like selenium. Versatile in cooking, used in various cuisines globally.",
         "unit_name": "kg",
         "unit_value": 1,
         "nutrition_weight": "140g",
@@ -121,7 +177,16 @@
         "image": "shrimp",
         "color" : "F89880",
         "cat_name": "Meat and Sea Foods",
-        "division_name": "ExclusiveOffer"
+        "division_name": "ExclusiveOffer",
+        "nutrition": {
+               "carbohydrates": 0.1,
+               "fats": 1.2,
+               "lipids": 0.3,
+               "protein": 24,
+               "vitamin_A": 0,
+               "vitamin_C": 2,
+               "vitamin_D": 1
+           }
     },
     
     {
@@ -131,7 +196,7 @@
         "end_date": "2023-12-15",
         "brand_id": 108,
         "name": "Bread",
-        "details": "High amount of Iron and Fibre",
+        "details": "Bread is a staple food made from flour, water, and yeast (or other leavening agents), baked to create a soft, fluffy texture. It comes in various types, such as whole-grain, sourdough, or gluten-free, offering carbohydrates, fiber, and sometimes added nutrients like iron and B vitamins. A versatile food used in sandwiches, as a side, or in various recipes.",
         "unit_name": "pcs",
         "unit_value": 1,
         "nutrition_weight": "40g",
@@ -139,7 +204,16 @@
         "image": "bread",
         "color" : "FFFFFF",
         "cat_name": "Grains and Cereals",
-        "division_name": "ExclusiveOffer"
+        "division_name": "ExclusiveOffer",
+        "nutrition": {
+               "carbohydrates": 22,
+               "fats": 3,
+               "lipids": 1,
+               "protein": 4,
+               "vitamin_A": 0,
+               "vitamin_C": 0,
+               "vitamin_D": 0
+           }
     },
 
     
@@ -150,15 +224,24 @@
         "end_date": "2023-11-01",
         "brand_id": 109,
         "name": "Apple",
-        "details": "Rich in Vitamin K and helps to cure blood clotting",
+        "details": "Apple is a crisp and juicy fruit with various colors and flavors. It's rich in fiber and antioxidants, offering vitamins like C and A. Apples come in diverse types, each with its unique taste, making them a popular and healthy snack.",
         "unit_name": "pcs",
         "unit_value": 2,
         "nutrition_weight": "160g",
         "price": 6.99,
         "image": "apple",
         "color" : "FF0000",
-        "cat_name": "Fruits and Vegitables",
-        "division_name": "ExclusiveOffer"
+        "cat_name": "Fruits and Vegetables",
+        "division_name": "ExclusiveOffer",
+        "nutrition": {
+                "carbohydrates": 28,
+                "fats": 0,
+                "lipids": 0,
+                "protein": 0.5,
+                "vitamin_A": 1,
+                "vitamin_C": 10,
+                "vitamin_D": 0
+            }
     },
     
     {
@@ -168,15 +251,24 @@
         "end_date": "2023-11-24",
         "brand_id": 110,
         "name": "Carrot",
-        "details": "Rich in Vitamins, Minerals and Antioxidants",
+        "details": "Carrot is a root vegetable known for its bright orange color and sweet taste. Carrots are packed with beta-carotene, providing vitamin A, and also offer fiber and antioxidants. They're versatile, eaten raw, cooked, or used in salads and dishes.",
         "unit_name": "pcs",
         "unit_value": 5,
         "nutrition_weight": "60g",
         "price": 12.43,
         "image": "carrot",
         "color" : "FFA500",
-        "cat_name": "Fruits and Vegitables",
-        "division_name": "ExclusiveOffer"
+        "cat_name": "Fruits and Vegetables",
+        "division_name": "ExclusiveOffer",
+        "nutrition": {
+                "carbohydrates": 6,
+                "fats": 0,
+                "lipids": 0,
+                "protein": 0.5,
+                "vitamin_A": 100,
+                "vitamin_C": 5,
+                "vitamin_D": 0
+            }
     },
     
     {
@@ -186,7 +278,7 @@
         "end_date": "2023-12-25",
         "brand_id": 111,
         "name": "Pineapple",
-        "details": "Rich in Vitamin C and Antioxidants",
+        "details": "Pineapple is a tropical fruit recognized for its sweet and tangy taste. It's rich in vitamin C and manganese, offering bromelain, an enzyme known for its potential anti-inflammatory properties. Pineapples are eaten fresh, added to fruit salads, or used in various recipes for a tropical flavor.",
         "unit_name": "pcs",
         "unit_value": 2,
         "nutrition_weight": "800g",
@@ -194,7 +286,16 @@
         "image": "pineapple",
         "color": "FFCC00",
         "cat_name": "Fruits and Vegetables",
-        "division_name": "BestSelling"
+        "division_name": "BestSelling",
+        "nutrition": {
+                "carbohydrates": 40,
+                "fats": 0,
+                "lipids": 0,
+                "protein": 1,
+                "vitamin_A": 2,
+                "vitamin_C": 80,
+                "vitamin_D": 0
+            }
     },
     
     {
@@ -204,7 +305,7 @@
         "end_date": "2024-01-08",
         "brand_id": 112,
         "name": "Butter",
-        "details": "Rich in Vitamin A and Essential Fats",
+        "details": "Butter is a dairy product made from churning cream or milk, resulting in a solid, creamy texture. It's a rich source of saturated fats and contains vitamins A and E. Butter is widely used in cooking, baking, and as a spread for its flavor-enhancing properties.",
         "unit_name": "pack",
         "unit_value": 1,
         "nutrition_weight": "100g",
@@ -212,7 +313,16 @@
         "image": "butter",
         "color": "FFE4B5",
         "cat_name": "Dairy and Eggs",
-        "division_name": "BestSelling"
+        "division_name": "BestSelling",
+        "nutrition": {
+                "carbohydrates": 0.1,
+                "fats": 81,
+                "lipids": 51,
+                "protein": 0.9,
+                "vitamin_A": 700,
+                "vitamin_C": 0,
+                "vitamin_D": 60
+            }
     },
     
     {
@@ -222,7 +332,7 @@
         "end_date": "2023-12-15",
         "brand_id": 113,
         "name": "Pork",
-        "details": "Lean and Nutritious",
+        "details": "Pork is a meat obtained from pigs, offering a range of cuts like loin, chops, or bacon. It's a good source of protein, vitamins (B12, B6), and minerals like zinc and iron. Pork is versatile in cooking, used in various cuisines for its flavor and texture.",
         "unit_name": "kg",
         "unit_value": 1,
         "nutrition_weight": "145g",
@@ -230,7 +340,16 @@
         "image": "pork",
         "color": "FF4500",
         "cat_name": "Meat and Seafood",
-        "division_name": "BestSelling"
+        "division_name": "BestSelling",
+        "nutrition": {
+                "carbohydrates": 0,
+                "fats": 5,
+                "lipids": 1.8,
+                "protein": 21,
+                "vitamin_A": 0,
+                "vitamin_C": 0,
+                "vitamin_D": 0
+            }
     },
     
     {
@@ -240,7 +359,7 @@
         "end_date": "2023-12-18",
         "brand_id": 114,
         "name": "Onion",
-        "details": "Versatile Cooking Ingredient",
+        "details": "Onion is a pungent vegetable composed of layers, used to add flavor to dishes. Onions offer antioxidants, vitamins C and B9, and are known for their anti-inflammatory properties. They're used raw, cooked, or caramelized in various recipes worldwide.",
         "unit_name": "kg",
         "unit_value": 1,
         "nutrition_weight": "150g",
@@ -248,7 +367,16 @@
         "image": "onion",
         "color": "8A2BE2",
         "cat_name": "Fruits and Vegetables",
-        "division_name": "BestSelling"
+        "division_name": "BestSelling",
+        "nutrition": {
+                "carbohydrates": 14,
+                "fats": 0.1,
+                "lipids": 0,
+                "protein": 1.3,
+                "vitamin_A": 0,
+                "vitamin_C": 9,
+                "vitamin_D": 0
+            }
     },
     
     {
@@ -258,7 +386,7 @@
         "end_date": "2023-11-30",
         "brand_id": 115,
         "name": "Cornmeal",
-        "details": "Great for Baking and Cooking",
+        "details": "Cornmeal is a coarse flour ground from dried corn, used in various culinary traditions. It's a good source of carbohydrates and contains fiber, protein, and essential minerals like iron and zinc. Cornmeal is used in dishes like polenta, cornbread, and as a coating for fried foods.",
         "unit_name": "pack",
         "unit_value": 1,
         "nutrition_weight": "110g",
@@ -266,7 +394,16 @@
         "image": "cornmeal",
         "color": "FFD700",
         "cat_name": "Grains and Cereals",
-        "division_name": "BestSelling"
+        "division_name": "BestSelling",
+        "nutrition": {
+                "carbohydrates": 18,
+                "fats": 1,
+                "lipids": 0.2,
+                "protein": 2,
+                "vitamin_A": 0,
+                "vitamin_C": 0,
+                "vitamin_D": 0
+            }
     },
     
     {
@@ -276,7 +413,7 @@
         "end_date": "2023-12-12",
         "brand_id": 116,
         "name": "Cottage Cheese",
-        "details": "Low-Fat and High-Protein",
+        "details": "Cottage Cheese is a fresh cheese with a mild flavor and creamy texture. It's high in protein, calcium, and B vitamins while being relatively low in fat. Cottage cheese is eaten on its own or used in salads, dips, and as a healthy ingredient in various recipes.",
         "unit_name": "pack",
         "unit_value": 1,
         "nutrition_weight": "120g",
@@ -284,7 +421,16 @@
         "image": "cottage_cheese",
         "color": "FFFFF0",
         "cat_name": "Dairy and Eggs",
-        "division_name": "BestSelling"
+        "division_name": "BestSelling",
+        "nutrition": {
+                "carbohydrates": 3,
+                "fats": 1,
+                "lipids": 0.3,
+                "protein": 12,
+                "vitamin_A": 3,
+                "vitamin_C": 0,
+                "vitamin_D": 0
+            }
     },
     
     {
@@ -294,7 +440,7 @@
         "end_date": "2023-12-04",
         "brand_id": 117,
         "name": "Lobster",
-        "details": "Delicious Seafood Choice",
+        "details": "Lobster is a prized seafood known for its sweet, tender meat. Lobster is a good source of protein, low in fat, and contains essential nutrients like vitamins B12 and B6, as well as minerals such as zinc and phosphorus. Often served boiled, grilled, or as part of luxurious dishes.",
         "unit_name": "pcs",
         "unit_value": 1,
         "nutrition_weight": "180g",
@@ -302,7 +448,16 @@
         "image": "lobster",
         "color": "E6E6FA",
         "cat_name": "Meat and Seafood",
-        "division_name": "BestSelling"
+        "division_name": "BestSelling",
+        "nutrition": {
+                "carbohydrates": 0,
+                "fats": 0.5,
+                "lipids": 0.1,
+                "protein": 18,
+                "vitamin_A": 2,
+                "vitamin_C": 0,
+                "vitamin_D": 0
+            }
     },
     
     {
@@ -312,7 +467,7 @@
         "end_date": "2023-12-25",
         "brand_id": 118,
         "name": "Barley",
-        "details": "Rich in Fiber and Nutrients",
+        "details": "Barley is a versatile cereal grain with a nutty flavor and chewy texture. It's a good source of fiber, vitamins (B3, B1), and minerals like manganese and selenium. Barley is used in soups, stews, salads, and as a substitute for rice or other grains, offering a hearty and nutritious addition to various dishes.",
         "unit_name": "pack",
         "unit_value": 1,
         "nutrition_weight": "130g",
@@ -320,7 +475,17 @@
         "image": "barley",
         "color": "FFE4C4",
         "cat_name": "Grains and Cereals",
-        "division_name": "BestSelling"
+        "division_name": "BestSelling",
+        "nutrition": {
+                "carbohydrates": 24,
+                "fats": 0.4,
+                "lipids": 0.1,
+                "protein": 2.3,
+                "vitamin_A": 0,
+                "vitamin_C": 0,
+                "vitamin_D": 0
+            }
+        
     }
 
     

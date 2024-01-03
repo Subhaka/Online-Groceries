@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProductDetailsView: View {
+    let item: GroceryStructure
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     @StateObject var productVM = ProductDetailsViewModel.shared
     var body: some View {
@@ -16,12 +17,12 @@ struct ProductDetailsView: View {
                 ZStack{
                     Rectangle().foregroundColor(Color(hex: "F2F2F2")).frame(width: .screenWidth, height: .screenWidth * 0.8).cornerRadius(50, corner:[.bottomLeft,.bottomRight])
                     
-                    Image("banana").resizable().scaledToFit().frame(width: .screenWidth * 0.7,height: 200)
+                    Image("\(item.image)").resizable().scaledToFit().frame(width: .screenWidth * 0.7,height: 200)
                     
                 }.frame(width: .screenWidth, height: .screenWidth * 0.8)
                 VStack{
                     HStack{
-                        Text("Banana").font(.system(size: 36, weight: .bold)).foregroundColor(.primaryText).frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                        Text("\(item.name)").font(.system(size: 36, weight: .bold)).foregroundColor(.primaryText).frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                         
                         Button(action: {
                             productVM.isFavItem.toggle()
@@ -43,7 +44,10 @@ struct ProductDetailsView: View {
                         .foregroundColor(.secondaryText)
                         
                     }
-                    Text("7pcs, Price").font(.system(size: 14,weight: .medium)).foregroundColor(.secondaryText).frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                    Text("\(String(item.unitValue)) \(item.unitName), Price")
+                        .font(.system(size: 14, weight: .medium))
+                        .foregroundColor(.secondaryText)
+                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                     HStack{
                         Button{
                             if(productVM.qnty>0){
@@ -65,7 +69,7 @@ struct ProductDetailsView: View {
                             Image(systemName:"plus").resizable().scaledToFit().frame(width: 25,height: 25).foregroundColor(.primaryApp)
                         }.padding(15)
                         Spacer()
-                        Text("$2.99").font(.system(size: 24,weight: .bold)).foregroundColor(.primaryText)
+                        Text("$\(item.formattedOfferPrice)").font(.system(size: 24,weight: .bold)).foregroundColor(.primaryText)
                     }.padding(.vertical, 8)
                     Divider()
                 }.padding(20)
@@ -90,6 +94,10 @@ struct ProductDetailsView: View {
                         
                     }
                     
+                    if(productVM.isShowDetails){
+                        Text("\(item.details)").font(.system(size: 13,weight: .medium)).foregroundColor(.secondaryText).frame(minWidth: 0, maxWidth: .infinity, alignment: .leading).padding(.bottom, 8)
+                    }
+                    
                     
                     Divider()
                     
@@ -99,7 +107,7 @@ struct ProductDetailsView: View {
                     HStack{
                         Text("Nutritions").font(.system(size: 16, weight: .semibold)).foregroundColor(.primaryText).frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                         
-                        Text("100g").font(.system(size: 10, weight: .semibold)).foregroundColor(.secondaryText).padding(8).background(Color.placeholder.opacity(0.5)).cornerRadius(5)
+                        Text("\(item.nutritionWeight)").font(.system(size: 10, weight: .semibold)).foregroundColor(.secondaryText).padding(8).background(Color.placeholder.opacity(0.5)).cornerRadius(5)
                         
                         Button{
                             productVM.isShowNut.toggle()
@@ -110,6 +118,17 @@ struct ProductDetailsView: View {
                                 .foregroundColor(.black)
                         }.foregroundColor(.secondaryText)
                     }
+                    if(productVM.isShowNut){
+                        ForEach(Array(Mirror(reflecting: item.nutrition).children), id: \.0) { child in
+                            HStack {
+                                Text("\(child.label ?? ""):")
+                                    .fontWeight(.bold)
+                                Spacer()
+                                Text("\(String(describing: child.value))g")
+                            }.padding(.horizontal, 20)
+                        }
+                        
+                    }
                     
                     Divider()
                     
@@ -118,8 +137,10 @@ struct ProductDetailsView: View {
                         HStack{
                             ForEach(1...5, id: \.self){ index in
                                 Image(systemName: "star.fill").resizable().scaledToFit().foregroundColor(.orange)
+                                
                             }
                         }
+                        
                         Button{
                             
                         }label: {
@@ -155,7 +176,8 @@ struct ProductDetailsView: View {
 }
 
 struct ProductDetailsView_Previews: PreviewProvider {
+    static let sampleItem = GroceryStructure(id: 1, offerPrice: 4.22, startDate: "23-04-2023", endDate: "23-05-2023", brandId: 100, name: "Banama", details: "Rich in Antioxidants", unitName: "pcs", unitValue: 5, nutritionWeight: "150g", price: 6.22, image: "banana", color: "yellow", categoryName:"Fruits & Vegitables", divisionName: "ExclusiveOffer", nutrition: Nutrition(carbohydrates: 2, fats: 5, lipids: 10, protein: 8, vitamin_A: 4, vitamin_C: 12, vitamin_D: 7))
     static var previews: some View {
-        ProductDetailsView()
+        ProductDetailsView(item: sampleItem)
     }
 }

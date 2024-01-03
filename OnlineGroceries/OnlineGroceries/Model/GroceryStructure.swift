@@ -1,4 +1,5 @@
 
+
 import Foundation
 struct GroceryStructure: Codable, Identifiable {
     let id: Int
@@ -14,8 +15,9 @@ struct GroceryStructure: Codable, Identifiable {
     let price: Double
     let image: String
     let color: String
-    let catName: String
+    let categoryName: String
     let divisionName: String
+    let nutrition: Nutrition
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -31,11 +33,32 @@ struct GroceryStructure: Codable, Identifiable {
         case price
         case image
         case color
-        case catName = "cat_name"
+        case categoryName = "cat_name"
         case divisionName = "division_name"
+        case nutrition
     }
-    
     var formattedOfferPrice: String{
-        return String(format:"%.2f", offerPrice)
+            return String(format:"%.2f", offerPrice)
+        }
+
+}
+
+struct Nutrition: Codable {
+    let carbohydrates: Double
+       let fats: Double
+       let lipids: Double
+       let protein: Double
+       let vitamin_A: Double // Ensure it matches the key in your JSON data
+       let vitamin_C: Double
+       let vitamin_D: Double
+    
+    enum CodingKeys: String, CodingKey {
+        case carbohydrates
+        case fats
+        case lipids
+        case protein
+        case vitamin_A = "vitamin_A"
+        case vitamin_C
+        case vitamin_D
     }
 }

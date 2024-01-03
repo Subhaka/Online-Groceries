@@ -32,37 +32,35 @@ struct HomeView: View {
                         
                     }
                     
-                    ScrollView(.horizontal) {
-                        LazyHStack {
-                            ForEach(groceriesModelData.modelData) { grocery in
-                                if (grocery.divisionName == "ExclusiveOffer"){
-                                    ProductCall(item: grocery)
-                                        .padding(8)
+                        ScrollView(.horizontal) {
+                            LazyHStack {
+                                ForEach(groceriesModelData.modelData.filter { $0.divisionName == "ExclusiveOffer" }, id: \.id) { grocery in
+                                    NavigationLink(destination: ProductDetailsView(item: grocery)) {
+                                        ProductCall(item: grocery)
+                                            .padding(8)
+                                    }
                                 }
                             }
-                            
+                            .padding(.vertical, 4)
                         }
-                        .padding(.vertical, 4)
-                    }
-                    
+
                     
                     SectionTitleAll(title: "Best Selling",titleAll: "See All"){
                         
                         
                     }
                     
-                    ScrollView(.horizontal){
-                        LazyHStack{
-                            
-                            ForEach(groceriesModelData.modelData) { grocery in
-                                if (grocery.divisionName == "BestSelling"){
-                                    ProductCall(item: grocery)
-                                        .padding(8)
+                        ScrollView(.horizontal) {
+                            LazyHStack {
+                                ForEach(groceriesModelData.modelData.filter { $0.divisionName == "BestSelling" }, id: \.id) { grocery in
+                                    NavigationLink(destination: ProductDetailsView(item: grocery)) {
+                                        ProductCall(item: grocery)
+                                            .padding(8)
+                                    }
                                 }
                             }
-                            
-                        }.padding(.vertical, 4)
-                    }
+                            .padding(.vertical, 4)
+                        }
                     
                         VStack{
                             SectionTitleAll(title: "Groceries",titleAll: "See All"){
@@ -96,30 +94,30 @@ struct HomeView: View {
                             ScrollView(.horizontal){
                                 LazyHStack{
                                     if(catID == "2"){
-                                        ForEach(groceriesModelData.modelData) { grocery in
-                                            if (grocery.catName == "Diary and Eggs"){
+                                        ForEach(groceriesModelData.modelData.filter { $0.categoryName == "Dairy and Eggs" }, id: \.id) { grocery in
+                                            NavigationLink(destination: ProductDetailsView(item: grocery)) {
                                                 ProductCall(item: grocery)
                                                     .padding(8)
                                             }
                                         }
                                     }
                                     else if(catID == "3"){
-                                        ForEach(groceriesModelData.modelData) { grocery in
-                                            if (grocery.catName == "Meat and Sea Foods"){
+                                        ForEach(groceriesModelData.modelData.filter { $0.categoryName == "Meat and Sea Foods" }, id: \.id) { grocery in
+                                            NavigationLink(destination: ProductDetailsView(item: grocery)) {
                                                 ProductCall(item: grocery)
                                                     .padding(8)
                                             }
                                         }
                                     }else if(catID == "4"){
-                                        ForEach(groceriesModelData.modelData) { grocery in
-                                            if (grocery.catName == "Grains and Cereals"){
+                                        ForEach(groceriesModelData.modelData.filter { $0.categoryName == "Grains and Cereals" }, id: \.id) { grocery in
+                                            NavigationLink(destination: ProductDetailsView(item: grocery)) {
                                                 ProductCall(item: grocery)
                                                     .padding(8)
                                             }
                                         }
                                     }else{
-                                        ForEach(groceriesModelData.modelData) { grocery in
-                                            if (grocery.catName == "Fruits and Vegitables"){
+                                        ForEach(groceriesModelData.modelData.filter { $0.categoryName == "Fruits and Vegetables" }, id: \.id) { grocery in
+                                            NavigationLink(destination: ProductDetailsView(item: grocery)) {
                                                 ProductCall(item: grocery)
                                                     .padding(8)
                                             }
