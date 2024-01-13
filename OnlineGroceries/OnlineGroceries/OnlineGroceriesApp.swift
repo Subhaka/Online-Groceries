@@ -6,14 +6,18 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct OnlineGroceriesApp: App {
     let groceriesModelData = GroceriesModelData()
-
+    @StateObject var authVM = AuthViewModel()
+    init(){
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
-            WelcomeView().environmentObject(groceriesModelData)
+            WelcomeView().environmentObject(groceriesModelData).environmentObject(authVM)
         }
     }
 }

@@ -24,7 +24,7 @@ struct LineTextField: View {
             
             Divider()
         }
-       
+        
     }
 }
 
@@ -33,19 +33,19 @@ struct LineSecureField: View {
     @Binding var isShowPassword: Bool
     @State var title: String = "Title"
     @State var placeholder: String = "Placeholder"
-   
+    
     var body: some View {
         VStack{
             Text(title).font(.system(size: 16,weight: .semibold)).foregroundColor(.textTitle).frame(minWidth: 0, maxWidth: .infinity, alignment: .leading).padding(.bottom, 15)
             if(isShowPassword){
                 TextField(placeholder, text: $txt).modifier(ShowButton(isShow: $isShowPassword))
             }else{
-              
+                
                 SecureField(placeholder, text: $txt) .modifier(ShowButton(isShow: $isShowPassword))
             }
             
             Divider()
         }
-       
+        
     }
 }

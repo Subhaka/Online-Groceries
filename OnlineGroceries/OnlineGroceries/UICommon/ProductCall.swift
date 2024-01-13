@@ -20,35 +20,31 @@ struct ProductCall: View {
             Text(item.name).font(.system(size: 16, weight: .bold)).foregroundColor(.primaryText).frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             
             Text("\(item.unitValue) \(item.unitName), price").font(.system(size: 14, weight: .bold)).foregroundColor(.secondaryText).frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-
+            
             Spacer()
-
+            
             HStack{
                 Text("$\(item.formattedOfferPrice)").font(.system(size: 18, weight: .semibold)).foregroundColor(.primaryText).frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                 Spacer()
-
+                
                 Button{
                     didAddCart?()
                     showingProductDetails = true
-
+                    
                 }label: {
                     Image(systemName: "plus").resizable().scaledToFit().frame(width: 15, height: 15).foregroundColor(Color.white)
                 } .frame(width: 40, height: 40)
-                .background(Color.primaryApp).cornerRadius(15)
-//                .sheet(isPresented: $showingProductDetails) {
-//                                // Navigate to ProductDetailsView with the selected item
-//                                ProductDetailsView(item: item)
-//                            }
-
+                    .background(Color.primaryApp).cornerRadius(15)
+                
             }
-//            Text("Valid till \(item.endDate)").font(.system(size: 12,weight: .medium))
-
-
+            //            Text("Valid till \(item.endDate)").font(.system(size: 12,weight: .medium))
+            
+            
         }.padding(20)
-        .frame(width: 180, height: 230).overlay{
-            RoundedRectangle(cornerRadius: 16).stroke(Color.placeholder.opacity(0.5), lineWidth: 1)
-        }
-//        .background(Color(hex: "\(item.color)").opacity(0.2))
+            .frame(width: 180, height: 230).overlay{
+                RoundedRectangle(cornerRadius: 16).stroke(Color.placeholder.opacity(0.5), lineWidth: 1)
+            }
+        //        .background(Color(hex: "\(item.color)").opacity(0.2))
     }
 }
 

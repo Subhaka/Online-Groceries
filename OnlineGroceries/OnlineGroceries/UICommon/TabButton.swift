@@ -21,7 +21,7 @@ struct TabButton: View {
                 
                 Text(title).font(.system(size: 14, weight: .semibold))
             }
-       
+            
         }.foregroundColor(isSelected ? .primaryApp : .primaryText).frame(minWidth: 0, maxWidth: .infinity)
     }
 }

@@ -13,5 +13,5 @@ class ProductDetailsViewModel: ObservableObject {
     @Published var isShowDetails: Bool = false;
     @Published var isShowNut: Bool = false;
     @Published var qnty: Int = 1;
-
+    
 }

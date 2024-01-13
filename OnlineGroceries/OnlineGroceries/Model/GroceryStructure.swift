@@ -38,19 +38,19 @@ struct GroceryStructure: Codable, Identifiable {
         case nutrition
     }
     var formattedOfferPrice: String{
-            return String(format:"%.2f", offerPrice)
-        }
-
+        return String(format:"%.2f", offerPrice)
+    }
+    
 }
 
 struct Nutrition: Codable {
     let carbohydrates: Double
-       let fats: Double
-       let lipids: Double
-       let protein: Double
-       let vitamin_A: Double // Ensure it matches the key in your JSON data
-       let vitamin_C: Double
-       let vitamin_D: Double
+    let fats: Double
+    let lipids: Double
+    let protein: Double
+    let vitamin_A: Double // Ensure it matches the key in your JSON data
+    let vitamin_C: Double
+    let vitamin_D: Double
     
     enum CodingKeys: String, CodingKey {
         case carbohydrates

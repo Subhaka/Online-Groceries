@@ -24,14 +24,14 @@ struct HomeView: View {
                         Text("Colombo, Sri Lanka").font(.system(size: 18, weight: .semibold)).foregroundColor(.darkGray)
                     }
                     VStack{
-                    SearchTextField(placeholder: "Search Store", txt: $homeVM.txtSearch).padding(.vertical, 10)
-                    
-                    Image("banner_top").resizable().scaledToFill().frame(height: 115)
-                    
-                    SectionTitleAll(title: "Exclusive Offer",titleAll: "See All"){
+                        SearchTextField(placeholder: "Search Store", txt: $homeVM.txtSearch).padding(.vertical, 10)
                         
-                    }
-                    
+                        Image("banner_top").resizable().scaledToFill().frame(height: 115)
+                        
+                        SectionTitleAll(title: "Exclusive Offer",titleAll: "See All"){
+                            
+                        }
+                        
                         ScrollView(.horizontal) {
                             LazyHStack {
                                 ForEach(groceriesModelData.modelData.filter { $0.divisionName == "ExclusiveOffer" }, id: \.id) { grocery in
@@ -43,13 +43,13 @@ struct HomeView: View {
                             }
                             .padding(.vertical, 4)
                         }
-
-                    
-                    SectionTitleAll(title: "Best Selling",titleAll: "See All"){
                         
                         
-                    }
-                    
+                        SectionTitleAll(title: "Best Selling",titleAll: "See All"){
+                            
+                            
+                        }
+                        
                         ScrollView(.horizontal) {
                             LazyHStack {
                                 ForEach(groceriesModelData.modelData.filter { $0.divisionName == "BestSelling" }, id: \.id) { grocery in
@@ -61,7 +61,7 @@ struct HomeView: View {
                             }
                             .padding(.vertical, 4)
                         }
-                    
+                        
                         VStack{
                             SectionTitleAll(title: "Groceries",titleAll: "See All"){
                                 

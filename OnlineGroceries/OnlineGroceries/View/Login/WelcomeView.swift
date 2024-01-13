@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    @EnvironmentObject var authVM: AuthViewModel
     var body: some View {
         NavigationView{
             ZStack{
@@ -22,23 +23,29 @@ struct WelcomeView: View {
                         .padding(.bottom, 8)
                     Text("Welcome\nto our Store").font(.system(size: 48, weight: .bold)).foregroundColor(.white).multilineTextAlignment(.center)
                     Text("Get your groceries in as fast as one hour").font(.system(size: 16, weight: .medium)).foregroundColor(.white.opacity(0.7)).multilineTextAlignment(.center).padding(.bottom, 20)
-
+                    
                     NavigationLink{
-                        SignInView().navigationBarBackButtonHidden(true)
+//                        SignInView().navigationBarBackButtonHidden(true)
+                        if authVM.userSession != nil {
+                            MainTabView()
+                        }else{
+                            SignInView()
+                        }
+                        
                     }label: {
                         RoundButton(title: "Get Started"){
                             
                         }
                     }
-
+                    
                     Spacer().frame(height: 80)
                 }.padding(.horizontal, 20)
-
-
-
-
+                
+                
+                
+                
             }.ignoresSafeArea()
-
+            
         }.navigationTitle("").navigationBarBackButtonHidden(true).navigationBarHidden(true)
     }
     

@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseFirestoreSwift
 
 struct ProductDetailsView: View {
     let item: GroceryStructure
@@ -26,6 +28,8 @@ struct ProductDetailsView: View {
                         
                         Button(action: {
                             productVM.isFavItem.toggle()
+                            print(type(of: item))
+
                         }) {
                             if productVM.isFavItem {
                                 Image(systemName: "heart.fill")
@@ -33,6 +37,7 @@ struct ProductDetailsView: View {
                                     .scaledToFit()
                                     .frame(width: 25)
                                     .foregroundColor(.red)
+                        
                             } else {
                                 Image(systemName: "heart")
                                     .resizable()
@@ -177,6 +182,7 @@ struct ProductDetailsView: View {
 
 struct ProductDetailsView_Previews: PreviewProvider {
     static let sampleItem = GroceryStructure(id: 1, offerPrice: 4.22, startDate: "23-04-2023", endDate: "23-05-2023", brandId: 100, name: "Banama", details: "Rich in Antioxidants", unitName: "pcs", unitValue: 5, nutritionWeight: "150g", price: 6.22, image: "banana", color: "yellow", categoryName:"Fruits & Vegitables", divisionName: "ExclusiveOffer", nutrition: Nutrition(carbohydrates: 2, fats: 5, lipids: 10, protein: 8, vitamin_A: 4, vitamin_C: 12, vitamin_D: 7))
+
     static var previews: some View {
         ProductDetailsView(item: sampleItem)
     }

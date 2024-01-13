@@ -12,7 +12,7 @@ struct RoundButton: View {
     var didTap: (()-> ())?
     var body: some View {
         Button{
-           didTap?()
+            didTap?()
             
         }label: {
             Text("\(title)").font(.system(size: 18, weight:.semibold)).foregroundColor(.white).multilineTextAlignment(.center)

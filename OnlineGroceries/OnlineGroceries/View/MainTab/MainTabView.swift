@@ -16,7 +16,7 @@ struct MainTabView: View {
                 ExploreView().tag(1)
                 CartView().tag(2)
                 FavouriteView().tag(3)
-                ExploreView().tag(4)
+                AccountView().tag(4)
             }.onAppear{
                 UIScrollView.appearance().isScrollEnabled = false
             }.tabViewStyle(.page(indexDisplayMode:.never)).onChange(of: homeVM.selectTab){
